@@ -1,0 +1,2 @@
+name: safe-ship
+description: Review git repo changes from developer, SRE, and security perspectives, then prepare a guarded commit and push workflow

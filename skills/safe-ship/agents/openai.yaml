@@ -1,0 +1,4 @@
+interface:
+  display_name: "Safe Ship"
+  short_description: "Review changes and guard commit/push flow"
+  default_prompt: "Use $safe-ship to review this repo, prepare a safe commit, and gate any push."
