@@ -1,0 +1,4 @@
+interface:
+  display_name: "Telegram Skill Update"
+  short_description: "Notify Telegram when new skills are created"
+  default_prompt: "Use $telegram-skill-update to detect newly created skills and send a concise Telegram group update."

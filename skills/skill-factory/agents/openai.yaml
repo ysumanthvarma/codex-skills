@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Factory"
+  short_description: "Scaffold new Codex skills and repos"
+  default_prompt: "Use $skill-factory to plan, scaffold, and publish a new Codex skill repo with README files and git setup."

@@ -35,6 +35,38 @@ Key safety behavior:
 
 Path: `skills/safe-ship`
 
+### `ticket-generator`
+
+Generates a structured change ticket for created, updated, or deleted Codex skills.
+
+Use it when you want to turn a set of skill-related git changes into a reviewer-ready ticket.
+
+Path: `skills/ticket-generator`
+
+### `skill-ship`
+
+Reviews changed Codex skills, generates a change ticket, and guides a safe commit, push, draft PR, and optional GitHub issue workflow.
+
+Use it when you want to ship skill changes through GitHub with a guarded workflow.
+
+Path: `skills/skill-ship`
+
+### `skill-factory`
+
+Scaffolds new Codex skills, generates missing `README.md` files, and prepares a repo for git initialization and publish.
+
+Use it when you want to create a new skill repo or add new skills to an existing repo.
+
+Path: `skills/skill-factory`
+
+### `telegram-skill-update`
+
+Detects newly created Codex skills and sends a concise Telegram group update using bot credentials from environment variables.
+
+Use it when you want to notify a Telegram group after a new skill is created.
+
+Path: `skills/telegram-skill-update`
+
 ## Layout
 
 Each skill follows the same basic structure:

@@ -1,0 +1,2 @@
+name: telegram-skill-update
+description: Detect newly created Codex skills and send a concise Telegram group update using bot credentials from environment variables

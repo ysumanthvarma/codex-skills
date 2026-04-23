@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Change Ticket"
+  short_description: "Generate tickets for skill git changes"
+  default_prompt: "Use $ticket-generator to generate a change ticket for the skill changes in this repository."

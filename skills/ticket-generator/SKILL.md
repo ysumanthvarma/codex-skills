@@ -1,5 +1,5 @@
 ---
-name: git-change-ticket
+name: ticket-generator
 description: Generate a structured git change ticket for created or updated Codex skills in the current repository.
 ---
 
