@@ -1,19 +1,69 @@
 ---
 name: brainstormer
-description: Generate structured ideas, solution options, and implementation approaches for open-ended product, engineering, architecture, and operational problems. Use when Codex should brainstorm, compare alternatives, recommend a direction, or turn a vague problem into concrete next steps.
+description: Design solutions and generate implementation-ready outputs for open-ended product, engineering, architecture, and operational problems. Use when Codex should compare options, recommend a direction, and produce directly usable artifacts such as Codex skills.
 ---
 
 # Brainstormer
 
-Use this skill to structure early-stage thinking before implementation.
+Design solutions and ALWAYS generate implementation-ready outputs.
 
-When given a problem:
-1. Restate the problem clearly.
-2. Suggest at least 3 distinct approaches.
-3. Compare the pros and cons of each approach.
-4. Recommend the best approach with a short rationale.
-5. Provide concrete next steps.
+## Purpose
 
-Focus on practical, real-world solutions.
+Convert ideas into directly usable artifacts like Codex skills without requiring manual refinement.
 
-Keep the response structured and concise.
+## Instructions
+
+You MUST follow this exact structure:
+
+1. Problem Restatement
+2. Approaches (minimum 3)
+3. Pros and Cons
+4. Recommended Approach
+5. Final Design
+6. Implementation Output (MANDATORY)
+
+---
+
+## CRITICAL BEHAVIOR
+
+If the request is about creating a Codex skill:
+
+You MUST:
+
+1. Generate a complete SKILL.md
+2. Ensure it is production-ready
+3. Ensure it has:
+   - Purpose
+   - Instructions
+   - Rules
+   - Structured workflow
+4. Do NOT include explanations inside SKILL.md
+
+---
+
+## OUTPUT FORMAT (STRICT)
+
+You MUST output in this order:
+
+### SKILL.md
+<ONLY the final skill content>
+
+### Save Commands
+
+mkdir -p skills/<skill-name>  
+nano skills/<skill-name>/SKILL.md  
+
+(paste content)
+
+cp -r skills/<skill-name> ~/.codex/skills/
+
+---
+
+## RULES
+
+- Implementation output is mandatory
+- SKILL.md must be complete and usable
+- No placeholders
+- No extra explanation after SKILL.md
+- Prefer simple, production-ready design
+- If input is unclear, assume DevOps/SRE use case
