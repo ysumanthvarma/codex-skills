@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Ship"
+  short_description: "Ship changed skills through GitHub safely"
+  default_prompt: "Use $skill-ship to review the changed skills in this repo, generate a ticket, and prepare a safe GitHub publish workflow."
