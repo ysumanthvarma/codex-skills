@@ -67,6 +67,17 @@ Use it when you want to notify a Telegram group after a new skill is created.
 
 Path: `skills/telegram-skill-update`
 
+### `skill-source-sync`
+
+Syncs upstream code repositories into skill `scripts/` folders and generates provenance-aware documentation.
+
+Use it when you want to:
+- hydrate missing `scripts/` content for copied local skills
+- keep upstream source provenance attached to synced files
+- generate per-skill README content from a single manifest
+
+Path: `skills/skill-source-sync`
+
 ## Layout
 
 Each skill follows the same basic structure:
