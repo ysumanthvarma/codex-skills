@@ -67,6 +67,14 @@ Use it when you want to notify a Telegram group after a new skill is created.
 
 Path: `skills/telegram-skill-update`
 
+### `system-performance-monitor`
+
+Diagnoses local system performance with safe read-only checks for CPU, memory, disk, battery, process, and network health.
+
+Use it when you want to inspect likely local performance bottlenecks and get concise next actions.
+
+Path: `skills/system-performance-monitor`
+
 ## Layout
 
 Each skill follows the same basic structure:
